@@ -8,6 +8,7 @@ local clients = {} -- Track connected clients
 -- Find all attached modems
 print("=== Chat Bridge Server ===")
 print("Scanning for modems...")
+print("NOTICE: THIS VERSION IS EXPERIMENTAL! THERE IS A BUG WHERE SOME MESSAGES MAY BE SENT TWICE. USE AT YOUR OWN RISK!")
 
 for _, side in ipairs(peripheral.getNames()) do
   if peripheral.getType(side) == "modem" then
